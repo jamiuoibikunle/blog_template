@@ -25,9 +25,10 @@ const Articles = () => {
                 alignItems="center"
                 justifyContent="space-between"
             >
-                {posts.map((post: Post) => {
+                {posts.map((post: Post, index: number) => {
                     return (
                         <Box
+                            key={index}
                             h="sm"
                             w="sm"
                             border="1px solid #e2e8f0"
