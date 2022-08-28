@@ -1,5 +1,6 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import NextLink from "next/link";
 import React, { useContext } from "react";
 import { Posts } from "../../pages";
 
@@ -25,9 +26,11 @@ const Featured = () => {
                     <Text py={2} color="blackAlpha.700">
                         {new Date(featured.updatedAt).toDateString()}
                     </Text>
-                    <Heading fontWeight="500" as="h3">
-                        {featured.title}
-                    </Heading>
+                    <NextLink href={"/" + featured.slug}>
+                        <Link fontSize="1.35rem" fontWeight="500">
+                            {featured.title}
+                        </Link>
+                    </NextLink>
                     <Text noOfLines={4} color="blackAlpha.700">
                         {featured.excerpt}
                     </Text>
