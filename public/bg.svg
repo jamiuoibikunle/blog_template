@@ -1,0 +1,6 @@
+<svg id="visual" viewBox="0 0 100 100" width="100%" height="auto" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<polygon points="0,0 100,0 100,75 0,100" fill="#0B4780" />
+<g fill="#1C5489">
+<circle r="10" cx="95" cy="40"></circle>
+<circle r="10" cx="5" cy="10" />
+<circle r="5" cx="75" cy="40" /></g></svg>

@@ -2,14 +2,16 @@ import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Articles from "./Posts";
 import Header from "./Header";
+import Featured from "./Featured";
 
 const Main = () => {
     return (
-        <Box w="95%" maxW="75rem" m="2rem auto">
+        <Box>
             <Head>
-                <title>Bigcast</title>
+                <title>DailyRead</title>
             </Head>
             <Header />
+            <Featured />
             <Articles />
         </Box>
     );

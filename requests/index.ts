@@ -3,17 +3,21 @@ import { gql, request } from "graphql-request";
 export const getPosts = async () => {
     const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
     const query = gql`
-        query PostQuery {
-            posts(orderBy: publishedAt_ASC) {
-                id
-                slug
-                title
-                updatedAt
-                featured
+        query MyQuery {
+            posts {
+                excerpt
+                content {
+                    html
+                }
                 coverImage {
                     fileName
                     url
+                    updatedAt
                 }
+                slug
+                title
+                featured
+                updatedAt
             }
         }
     `;
