@@ -106,10 +106,11 @@ const Header = () => {
                     <IconButton
                         aria-label="Menu"
                         colorScheme="none"
-                        children={<HiOutlineMenuAlt1 size="1.5rem" />}
                         ref={btnRef}
                         onClick={onOpen}
-                    />
+                    >
+                        <HiOutlineMenuAlt1 size="1.5rem" />
+                    </IconButton>
                 </Show>
                 <Drawer
                     isOpen={isOpen}
