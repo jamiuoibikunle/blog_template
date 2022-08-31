@@ -11,7 +11,7 @@ type Post = {
 const Featured = () => {
     const { posts } = useContext(Posts);
     const featured = posts.find((post: Post) => post.featured === true);
-    console.log(featured);
+
     return (
         <Box my={10} p={{ base: 5, lg: 10 }}>
             <Flex my={8} gap={10} wrap="wrap" justifyContent="center">

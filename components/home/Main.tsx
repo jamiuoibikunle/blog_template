@@ -3,6 +3,7 @@ import Head from "next/head";
 import Articles from "./Posts";
 import Header from "./Header";
 import Featured from "./Featured";
+import Footer from "./Footer";
 
 const Main = () => {
     return (
@@ -13,6 +14,7 @@ const Main = () => {
             <Header />
             <Featured />
             <Articles />
+            <Footer />
         </Box>
     );
 };
